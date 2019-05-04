@@ -1,0 +1,354 @@
+
+/*------------------ ID Elements --------------------*/
+*{
+	font-family: "Papyrus" "Trebuchet MS";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*------------------ Class Elements --------------------*/
+.title{
+	text-align: center;
+}
+
+.dedication{
+	font-size: 1em;
+	align-content: center;
+	text-align: center;
+}
+
+.contact-details{
+	font-size: 1em;
+	color: black;
+}
+
+.temp{
+	background-color: black;
+	opacity: 0.5;
+	height: 100px;
+	width: 100px;
+	top: 0px;
+	right: 0px;
+	position: fixed;
+	z-index: 2;
+}
+
+.case{
+	background-color: hsla(0,0%,27%,0.82);
+	width: 40%;
+	height: 100%;
+	top: 0px;
+	right: -40%;
+	position: fixed;
+	z-index: 1;
+}
+
+nav {
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+nav li {
+	/*Nav List Shape*/
+	top: 120px;
+	position: relative; 
+	display:inline-block;
+	width: 200px;
+	height: 50px;
+	margin: 5px;
+	padding: 10px;
+	padding-top: 13px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgba(145, 215, 157, 0.5);
+
+	/*Nav List Text*/
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #F1F1F1;	
+}
+
+nav li:hover {
+	background-color: rgba(145, 215, 157, 0.8);
+	text-decoration: none;
+}
+
+nav li:active {
+	box-shadow: 0px 0px grey ;
+}
+
+
+/*----------------- Detail Classes ------------------*/
+
+.infoDetails{
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0px auto;
+	max-width: 900px;
+}
+
+.infoDetails h3{
+	text-align: center;
+	text-decoration: underline;
+	color: #795CBD;
+}
+
+.infoDetails .s1{
+	display: inline;
+	max-width: 400px;
+}
+
+
+/*----------------- Image Classes ------------------*/
+.image-venue{
+	line-height: 0px;	
+}
+
+.image-aj{
+	display: inline;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.image-menu{
+	max-width: 100%	
+}
+
+.image-itinerary{
+	max-width: 100%	
+}
+
+/*------------------ Slide Show ----------------------*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+	
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/*------------------ Tag Elements --------------------*/
+header {
+	position: relative;
+	top: -0px;
+	background-color: lightsteelblue;
+	width: 100%;
+	height: 130px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: peachpuff;
+	position: relative;
+	top: 0px;
+	margin-bottom: 170px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+p {
+    color: black;
+}
+
+footer {
+	width: 100%;
+	padding: 10px;
+	bottom: 0px;
+	height: 200px;
+}
+
+
+/*------------------ Phone Mode --------------------*/
+
+@media only screen and (orientation: portrait){
+
+/*------------------ Class Elements --------------------*/
+
+	.dedication{
+		font-size: 16px;
+		align-content: center;
+		text-align: center;
+	}
+
+	.contact-details{
+		font-size: 1.5em;
+		color: black;
+	}
+
+/*----------------- Image Classes ------------------*/
+	.image-venue{
+		line-height: 0px;
+	}
+
+	.image-aj{
+		display: inline;
+		line-height: 0px;
+		font-size: 0px;
+	}
+
+	.image-menu{
+		max-width: 1000px
+	}
+
+	.image-itinerary{
+		max-width: 1000px
+	}
+
+	
+	
+/*------------------ Slide Show ----------------------*/
+
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		background-color: rgba(0,0,0,0.4);
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	
+/*------------------ Tag Elements --------------------*/
+	
+
+	body {
+		background-color: peachpuff;
+		position: relative;
+		top: 0px;
+		margin-bottom: 170px;
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+	
+	
+

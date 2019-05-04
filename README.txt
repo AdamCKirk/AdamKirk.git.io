@@ -1,1 +1,0 @@
-This is a basic portfolio to demonstrate my skill.
