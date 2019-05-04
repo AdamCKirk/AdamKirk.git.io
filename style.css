@@ -88,7 +88,7 @@ nav li:active {
 	border-radius: 10px;
 	padding: 10px;
 	margin: 0px auto;
-	max-width: 900px;
+	max-width: 500px;
 }
 
 .infoDetails h3{
@@ -100,22 +100,46 @@ nav li:active {
 .infoDetails .s1{
 	display: inline;
 	max-width: 400px;
+	color: red;
 }
 
+/*----------------- Skill Group Classes ------------------*/
+.section
+{
+	/*border: 2px solid black;*/
+	text-align: center;
+}
+
+.column
+{
+    display: table-cell;
+    background-color: rgba(165,165,165,0.75);
+	height: 200px;
+	width: 300px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+.row
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
 
 /*----------------- Image Classes ------------------*/
-.image-venue{
-	line-height: 0px;	
+.image-profile-pic{
+	line-height: 0px;
+	border-radius: 50%;
 }
 
 .image-aj{
 	display: inline;
 	line-height: 0px;
 	font-size: 0px;
-}
-
-.image-menu{
-	max-width: 100%	
 }
 
 .image-itinerary{
@@ -194,7 +218,7 @@ header {
 	top: -0px;
 	background-color: lightsteelblue;
 	width: 100%;
-	height: 80px;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -247,9 +271,6 @@ footer {
 		font-size: 0px;
 	}
 
-	.image-menu{
-		max-width: 1000px
-	}
 
 	.image-itinerary{
 		max-width: 1000px
