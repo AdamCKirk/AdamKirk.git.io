@@ -26,8 +26,8 @@
 .temp{
 	background-color: black;
 	opacity: 0.5;
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 100%;
 	top: 0px;
 	right: 0px;
 	position: fixed;
