@@ -23,7 +23,7 @@
 	color: black;
 }
 
-.temp{
+.navButton{
 	background-color: black;
 	opacity: 0.5;
 	height: 80px;
@@ -34,14 +34,19 @@
 	z-index: 2;
 }
 
-.case{
+.navCase{
 	background-color: hsla(0,0%,27%,0.82);
-	width: 40%;
+	width: 300px;
 	height: 100%;
 	top: 0px;
 	right: -40%;
 	position: fixed;
 	z-index: 1;
+}
+
+.skills
+{
+	background-color: rgba(167,146,214,0.5);
 }
 
 nav {
@@ -93,8 +98,8 @@ nav li:active {
 
 .infoDetails h3{
 	text-align: center;
-	text-decoration: underline;
-	color: #795CBD;
+	text-decoration: none;
+	color: black;
 }
 
 .infoDetails .s1{
@@ -128,6 +133,40 @@ nav li:active {
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
+}
+
+.cvCase
+{
+	display: table;
+    width: 100px;
+	height: 80px;
+	margin: 0px auto;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+.cv
+{
+    display: table-cell;
+    background-color: rgba(255,255,255,1.00);
+	height: 80px;
+	width: 220px;
+	border: 2px solid black;
+	border-radius: 10px;
+	border-spacing: 10px;
+    table-layout: fixed;
+	text-align: center;
+	vertical-align: middle;
+}
+.cv a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.experience
+{
+	margin: 0px 20px;
 }
 
 /*----------------- Image Classes ------------------*/
@@ -184,19 +223,19 @@ nav li:active {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,255,255,1.00);
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
@@ -216,17 +255,17 @@ nav li:active {
 header {
 	position: relative;
 	top: -0px;
-	background-color: lightsteelblue;
+	background-color: rgba(204,121,116,1.00);
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
 
 body {
-	background-color: peachpuff;
+	background-color: rgba(140,190,192,1.00);
 	position: relative;
 	top: 0px;
-	margin-bottom: 170px;
+	margin-bottom: 500px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -275,87 +314,6 @@ footer {
 	.image-itinerary{
 		max-width: 1000px
 	}
-
-	
-	
-/*------------------ Slide Show ----------------------*/
-
-	.slideshow-container {
-	  max-width: 1000px;
-	  position: relative;
-	  margin: auto;
-	}
-
-	/* Hide the images by default */
-	.mySlides {
-	  display: none;
-	}
-
-	/* Next & previous buttons */
-	.prev, .next {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		width: auto;
-		margin-top: -22px;
-		padding: 16px;
-		color: white;
-		font-weight: bold;
-		font-size: 18px;
-		transition: 0.6s ease;
-		border-radius: 0 3px 3px 0;
-		user-select: none;
-		background-color: rgba(0,0,0,0.4);
-	}
-
-	/* Position the "next button" to the right */
-	.next {
-	  right: 0;
-	  border-radius: 3px 0 0 3px;
-	}
-
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover, .next:hover {
-	  background-color: rgba(0,0,0,0.8);
-	}
-
-	/* The dots/bullets/indicators */
-	.dot {
-	  cursor: pointer;
-	  height: 15px;
-	  width: 15px;
-	  margin: 0 2px;
-	  background-color: #bbb;
-	  border-radius: 50%;
-	  display: inline-block;
-	  transition: background-color 0.6s ease;
-	}
-
-	.active, .dot:hover {
-	  background-color: #717171;
-	}
-	
-	/* Fading animation */
-	.fade {
-	  -webkit-animation-name: fade;
-	  -webkit-animation-duration: 1.5s;
-	  animation-name: fade;
-	  animation-duration: 1.5s;
-	}
-
-	
-/*------------------ Tag Elements --------------------*/
-	
-
-	body {
-		background-color: peachpuff;
-		position: relative;
-		top: 0px;
-		margin-bottom: 170px;
-		width: 1000px;
-		margin: 0 auto;
-	}
-
 }
 
 

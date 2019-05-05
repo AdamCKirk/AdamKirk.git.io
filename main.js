@@ -47,23 +47,20 @@
 		}
 	}
 
-
 // -------------------- jQuery coding ------------------------
 let linkClosed = false;
-$('.case').animate({right:'-80%'},0);
+$('.navCase').animate({right:'-80%'},0);
 
 $(document).ready(() => {
 	
-	$(".temp").on("click", () => {		
+	$(".navButton").on("click", () => {		
 		
 		if(linkClosed == false){
-			$('.case').animate({right:'0%'},500);
+			$('.navCase').animate({right:'0%'},500);
 			linkClosed = true;
 		} else {
-			$('.case').animate({right:'-80%'},800);
+			$('.navCase').animate({right:'-80%'},800);
 			linkClosed = false;
 		}		
 	})	
 })
-
-
