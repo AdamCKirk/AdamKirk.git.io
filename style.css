@@ -172,7 +172,14 @@ nav li:active {
 /*----------------- Image Classes ------------------*/
 .image-profile-pic{
 	line-height: 0px;
-	border-radius: 50%;
+	background-image:url("Images/Background Desktop.jpg");
+	background-repeat:repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.shade{
+	background-color: rgba(25,25,25,0.5);	
 }
 
 .image-aj{
