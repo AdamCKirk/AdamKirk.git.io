@@ -296,30 +296,14 @@ footer {
 /*------------------ Class Elements --------------------*/
 
 	.dedication{
-		font-size: 16px;
+		font-size: 13px;
 		align-content: center;
 		text-align: center;
 	}
 
 	.contact-details{
-		font-size: 1.5em;
+		font-size: 1.1em;
 		color: black;
-	}
-
-/*----------------- Image Classes ------------------*/
-	.image-venue{
-		line-height: 0px;
-	}
-
-	.image-aj{
-		display: inline;
-		line-height: 0px;
-		font-size: 0px;
-	}
-
-
-	.image-itinerary{
-		max-width: 1000px
 	}
 }
 
