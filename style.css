@@ -39,11 +39,6 @@
 	z-index: 1;
 }
 
-.skills
-{
-	background-color: rgba(167,146,214,0.5);
-}
-
 nav {
 	text-decoration: none;
 	text-align: center;
@@ -112,7 +107,7 @@ nav li:active {
 	text-align: center;
 }
 
-.column
+.skillColumn
 {
     display: table-cell;
     background-color: rgba(165,165,165,0.75);
@@ -124,12 +119,17 @@ nav li:active {
 	padding: 10px;
 	text-align: center;
 }
-.row
+.skillRow
 {
     display: table;
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
+}
+
+.skills
+{
+	background-color: rgba(167,146,214,0.5);
 }
 
 .cvCase
@@ -147,7 +147,7 @@ nav li:active {
     display: table-cell;
     background-color: rgba(255,255,255,1.00);
 	height: 80px;
-	width: 220px;
+	width: 240px;
 	border: 2px solid black;
 	border-radius: 10px;
 	border-spacing: 10px;
@@ -292,6 +292,11 @@ footer {
 		max-width: 700px;
 		min-width: 600px;
 		contact-details: 1.1em;
+	}
+	
+	.skillColumn
+	{
+		font-size: 1.1em;		
 	}
 }
 
