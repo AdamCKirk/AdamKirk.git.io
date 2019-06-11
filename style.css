@@ -285,23 +285,21 @@ footer {
     border-bottom-left-radius: 10px;
 }
 
-
 /*Temp Toggle styles*/
 .toggle-content {
     display: none;
     height: 0;
     overflow: hidden;
-    transition: height 350ms ease-in-out;
+    transition: height 350ms ease-out;
     
-    color:white;
-    margin-left: 0px;
+    margin-left: 10px;
     padding: 10px;
     width: 500px;
     position: relative;
     top: -20px;
     background-color: rgba(255, 255, 255, 1);
     color: #3c2d53;
-    border: 2px solid #3c2d53;;
+    border: 2px solid #3c2d53;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -316,15 +314,11 @@ footer {
     text-decoration: none;
 }
 
-.leftItems {
+.skillItem {
     width: 500px;
     display:table-cell;
 }
 
-.rightItems {
-    width: 500px;
-    display:table-cell;
-}
 
 /*------------------------------------------------ CSS Styles for Animation End -----------------------------------*/
 
