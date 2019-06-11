@@ -245,7 +245,6 @@ nav li:active {
 header {
 	position: relative;
 	top: -0px;
-	background-color: rgba(204,121,116,1.00);
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
@@ -270,6 +269,65 @@ footer {
 	bottom: 0px;
 	height: 200px;
 }
+
+/*------------------------------------------------- CSS Styles for Animation ------------------------------------*/
+
+.items > p { /* This selects all the p elements within the div class items (all text boxes that are attached to the items)*/
+    margin-left: 14px;
+    padding: 10px;
+    width: 438px;
+    position: relative;
+    top: -26.5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #3c2d53;
+    border: 2px solid #3c2d53;;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/*Temp Toggle styles*/
+.toggle-content {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 350ms ease-in-out;
+    
+    color:white;
+    margin-left: 0px;
+    padding: 10px;
+    width: 500px;
+    position: relative;
+    top: -20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #3c2d53;
+    border: 2px solid #3c2d53;;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.toggle-content.is-visible {
+    display: block;
+    height: auto;
+}
+
+.toggle {
+    color:cyan;
+    text-decoration: none;
+}
+
+.leftItems {
+    width: 500px;
+    display:table-cell;
+}
+
+.rightItems {
+    width: 500px;
+    display:table-cell;
+}
+
+/*------------------------------------------------ CSS Styles for Animation End -----------------------------------*/
+
 
 
 /*------------------ Phone Mode --------------------*/
