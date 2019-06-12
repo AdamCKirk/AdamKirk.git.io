@@ -167,12 +167,28 @@ nav li:active {
 }
 
 /*----------------- Image Classes ------------------*/
-.image-profile-pic{
-	line-height: 0px;
-	background-image:url("Images/Background-Desktop.jpg");
+.profile-Area{
+    display: block;
+    width: 100%;
+    height: 935;
+    text-align: center;
+    
+}
+
+.profile-pic{ 
+    display: inline-block;
+    width: 500px;
+    margin: 0 auto;
 	background-repeat:repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+.profile-background{
+    display: inline-block;
+	line-height: 0px;
+    width: 1280px;
+    opacity: 0.7;
 }
 
 /*------------------ Slide Show ----------------------*/
