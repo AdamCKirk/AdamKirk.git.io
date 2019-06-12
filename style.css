@@ -76,35 +76,95 @@ nav li:active {
 }
 
 
-/*----------------- Detail Classes ------------------*/
-
-.infoDetails{
-	border: 2px solid black;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 0px auto;
-	max-width: 350px;
-	min-width: 300px;
-	contact-details: 0.9em;
+/*----------------- Profile Classes Start ------------------*/
+.profile-Area{
+    display: block;
+    width: 100%;
+    height: 935;
+    text-align: center;
+    
 }
 
-.infoDetails h3{
-	text-align: center;
-	text-decoration: none;
-	color: black;
+.profile-pic{ 
+    display: relative;
+    width: 500px;
+    margin: 0 auto;
+	background-repeat:repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.infoDetails .s1{
-	display: inline;
-	max-width: 400px;
-	color: red;
+.profile-background{
+    display: relative;
+	line-height: 0px;
+    width: 1280px;
+    opacity: 0.7;
 }
+/*----------------- Profile Classes End ------------------*/
+
+
+
+/*------------------------------------------------- CSS Styles for Animation ------------------------------------*/
+
+.skillItem {
+    width: 500px;
+    display:table-cell;
+}
+
+.items > p { /* This selects all the p elements within the div class items (all text boxes that are attached to the items)*/
+    margin-left: 14px;
+    padding: 10px;
+    width: 438px;
+    position: relative;
+    top: -20.5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #3c2d53;
+    border: 2px solid #3c2d53;;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Temp Toggle styles*/
+.toggle-content {
+    text-align: left;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 350ms ease-out;
+    
+    margin-left: 0px;
+    padding: 10px;
+    width: 481px;
+    position: relative;
+    top: -16px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #3c2d53;
+    border: 2px solid #3c2d53;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.toggle-content.is-visible {
+    display: block;
+    height: auto;
+}
+
+.toggle {
+    color:cyan;
+    text-decoration: none;
+}
+/*------------------------------------------------ CSS Styles for Animation End -----------------------------------*/
+
+
 
 /*----------------- Skill Group Classes ------------------*/
-.section
-{
+.section {
 	/*border: 2px solid black;*/
 	text-align: center;
+}
+
+.skills-Area{
+    
 }
 
 .skillColumn
@@ -126,12 +186,11 @@ nav li:active {
     table-layout: fixed;
     border-spacing: 10px;
 }
+/*----------------- Skill Group Classes End ------------------*/
 
-.skills
-{
-	background-color: rgba(167,146,214,0.5);
-}
 
+
+/*----------------- Link Group Classes Start ------------------*/
 .cvCase
 {
 	display: table;
@@ -165,38 +224,66 @@ nav li:active {
 {
 	margin: 0px 20px;
 }
+/*----------------- Link Group Classes End ------------------*/
 
-/*----------------- Image Classes ------------------*/
-.profile-Area{
-    display: block;
-    width: 100%;
-    height: 935;
+
+
+
+/*----------------- Contact Card Animation Start ------------------*/
+.flip-card {
     text-align: center;
-    
+    background-color: transparent;
+    perspective: 1000px;
 }
 
-.profile-pic{ 
-    display: inline-block;
-    width: 500px;
-    margin: 0 auto;
-	background-repeat:repeat;
-	background-position: center;
-	background-size: cover;
+.flip-card-inner {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.profile-background{
-    display: inline-block;
-	line-height: 0px;
-    width: 1280px;
-    opacity: 0.7;
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    padding: 10px;    
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back > p {
+    text-align: left;    
+}
+/*----------------- Contact Card Animation End ------------------*/
+
+
+
+
 
 /*------------------ Slide Show ----------------------*/
 
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
@@ -285,59 +372,6 @@ footer {
 	bottom: 0px;
 	height: 200px;
 }
-
-/*------------------------------------------------- CSS Styles for Animation ------------------------------------*/
-
-.items > p { /* This selects all the p elements within the div class items (all text boxes that are attached to the items)*/
-    margin-left: 14px;
-    padding: 10px;
-    width: 438px;
-    position: relative;
-    top: -20.5px;
-    background-color: rgba(255, 255, 255, 1);
-    color: #3c2d53;
-    border: 2px solid #3c2d53;;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-/*Temp Toggle styles*/
-.toggle-content {
-    text-align: left;
-    display: none;
-    height: 0;
-    overflow: hidden;
-    transition: height 350ms ease-out;
-    
-    margin-left: 0px;
-    padding: 10px;
-    width: 481px;
-    position: relative;
-    top: -16px;
-    background-color: rgba(255, 255, 255, 1);
-    color: #3c2d53;
-    border: 2px solid #3c2d53;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.toggle-content.is-visible {
-    display: block;
-    height: auto;
-}
-
-.toggle {
-    color:cyan;
-    text-decoration: none;
-}
-
-.skillItem {
-    width: 500px;
-    display:table-cell;
-}
-
-
-/*------------------------------------------------ CSS Styles for Animation End -----------------------------------*/
 
 
 
