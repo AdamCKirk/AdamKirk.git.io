@@ -7,6 +7,36 @@
 	box-sizing: border-box;
 }
 
+
+/*------------------ Tag Elements --------------------*/
+header {
+	position: relative;
+	top: -0px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+body {
+	background-color: rgba(140,190,192,1.00);
+	position: relative;
+	top: 0px;
+	margin-bottom: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+p {
+    color: black;
+}
+
+footer {
+	width: 100%;
+	padding: 10px;
+	bottom: 0px;
+	height: 200px;
+}
+
 /*------------------ Class Elements --------------------*/
 .title{
 	text-align: center;
@@ -77,15 +107,15 @@ nav li:active {
 
 
 /*----------------- Profile Classes Start ------------------*/
-.profile-Area{
-    display: block;
+.profile-Area {
+    display:inline-block;
     width: 100%;
     height: 935;
     text-align: center;
     
 }
 
-.profile-pic{ 
+.profile-pic { 
     display: relative;
     width: 500px;
     margin: 0 auto;
@@ -94,10 +124,11 @@ nav li:active {
 	background-size: cover;
 }
 
-.profile-background{
+.profile-background {
+    top: -20px;
+    margin: 10px;
     display: relative;
-	line-height: 0px;
-    width: 1280px;
+    width: 100%;
     opacity: 0.7;
 }
 /*----------------- Profile Classes End ------------------*/
@@ -229,56 +260,7 @@ nav li:active {
 
 
 
-/*----------------- Contact Card Animation Start ------------------*/
-.flip-card {
-    text-align: center;
-    background-color: transparent;
-    perspective: 1000px;
-}
-
-.flip-card-inner {
-    position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-.flip-card-back {
-    padding: 10px;    
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.flip-card-back > p {
-    text-align: left;    
-}
-/*----------------- Contact Card Animation End ------------------*/
-
-
-
-
-
-/*------------------ Slide Show ----------------------*/
+/*------------------ Slide Show Start ----------------------*/
 
 .slideshow-container {
     max-width: 1000px;
@@ -342,36 +324,63 @@ nav li:active {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+/*------------------ Slide Show End ----------------------*/
 
 
-/*------------------ Tag Elements --------------------*/
-header {
-	position: relative;
-	top: -0px;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
+
+/*----------------- Contact Card Animation Start ------------------*/
+.flip-card {
+    text-align: center;
+    background-color: transparent;
+    perspective: 1000px;
 }
 
-body {
-	background-color: rgba(140,190,192,1.00);
-	position: relative;
-	top: 0px;
-	margin-bottom: 500px;
-	width: 100%;
-	margin: 0 auto;
+.flip-card-inner {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-p {
-    color: black;
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-footer {
-	width: 100%;
-	padding: 10px;
-	bottom: 0px;
-	height: 200px;
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
+
+.flip-card-front {
+    padding: 10px;
+    background-color: #bbb;
+    user-select: none;
+}
+
+.flip-card-back {
+    padding: 10px;    
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    user-select: none;    
+}
+
+.flip-card-back > h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.flip-card-back > p {
+    text-align: left;
+    color: #333;
+}
+/*----------------- Contact Card Animation End ------------------*/
+
 
 
 
