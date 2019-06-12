@@ -185,7 +185,7 @@ nav li:active {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 
 /* Next & previous buttons */
@@ -213,7 +213,7 @@ nav li:active {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.5);
 }
 
 /* The dots/bullets/indicators */
@@ -229,7 +229,7 @@ nav li:active {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+	background-color: #717171;
 }
 	
 /* Fading animation */
@@ -277,7 +277,7 @@ footer {
     padding: 10px;
     width: 438px;
     position: relative;
-    top: -26.5px;
+    top: -20.5px;
     background-color: rgba(255, 255, 255, 1);
     color: #3c2d53;
     border: 2px solid #3c2d53;;
@@ -287,16 +287,17 @@ footer {
 
 /*Temp Toggle styles*/
 .toggle-content {
+    text-align: left;
     display: none;
     height: 0;
     overflow: hidden;
     transition: height 350ms ease-out;
     
-    margin-left: 10px;
+    margin-left: 0px;
     padding: 10px;
-    width: 500px;
+    width: 481px;
     position: relative;
-    top: -20px;
+    top: -16px;
     background-color: rgba(255, 255, 255, 1);
     color: #3c2d53;
     border: 2px solid #3c2d53;
