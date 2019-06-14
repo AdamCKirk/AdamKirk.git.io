@@ -108,28 +108,33 @@ nav li:active {
 
 /*----------------- Profile Classes Start ------------------*/
 .profile-Area {
-    display:inline-block;
     width: 100%;
-    height: 935;
     text-align: center;
     
 }
 
 .profile-pic { 
+    position: relative;
+    margin: 10px;   
     display: relative;
+    top: 150px;
     width: 500px;
-    margin: 0 auto;
-	background-repeat:repeat;
-	background-position: center;
-	background-size: cover;
+    z-index: 2;
 }
 
 .profile-background {
-    top: -20px;
-    margin: 10px;
+    position: relative;
+    margin: 0 auto;
     display: relative;
+    top: -500px;
     width: 100%;
     opacity: 0.7;
+}
+
+#Intro {
+    position: relative;
+    top: -500px;
+    
 }
 /*----------------- Profile Classes End ------------------*/
 
@@ -194,12 +199,11 @@ nav li:active {
 	text-align: center;
 }
 
-.skills-Area{
+.skills-Area {
     
 }
 
-.skillColumn
-{
+.skillColumn {
     display: table-cell;
     background-color: rgba(165,165,165,0.75);
 	height: 200px;
@@ -210,8 +214,8 @@ nav li:active {
 	padding: 10px;
 	text-align: center;
 }
-.skillRow
-{
+
+.skillRow {
     display: table;
     width: 100%;
     table-layout: fixed;
@@ -222,8 +226,7 @@ nav li:active {
 
 
 /*----------------- Link Group Classes Start ------------------*/
-.cvCase
-{
+.cvCase {
 	display: table;
     width: 100px;
 	height: 80px;
@@ -232,8 +235,7 @@ nav li:active {
     border-spacing: 10px;
 }
 
-.cv
-{
+.cv {
     display: table-cell;
     background-color: rgba(255,255,255,1.00);
 	height: 80px;
@@ -245,14 +247,12 @@ nav li:active {
 	text-align: center;
 	vertical-align: middle;
 }
-.cv a
-{
+.cv a {
 	text-decoration: none;
 	color: black;
 }
 
-.experience
-{
+.experience {
 	margin: 0px 20px;
 }
 /*----------------- Link Group Classes End ------------------*/
