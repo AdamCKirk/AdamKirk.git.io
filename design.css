@@ -1,0 +1,346 @@
+
+body {
+    background-color: #455f6d;
+    color:white;
+    margin: 0;
+    padding;
+    user-select: none;
+}
+
+/*------------------------------------------------ CSS Styles for Zone Areas Start -----------------------------------*/
+#titleArea {
+    display: inline;
+    text-align: center;
+    background-color: #3c2d53;
+    height: 100px;
+}
+
+#titleDividerArea {
+
+}
+
+#coverArea {
+    text-align: center;
+}
+
+#videoArea {
+    text-align: center;
+}
+
+#skillsArea {
+    position: relative;
+    /*
+    background-color: grey;
+    border: solid 5px #333;
+    border-radius: 10px;
+    */
+    margin: 20px auto;
+    padding: 20px;
+    z-index: 1;
+    width: 1280px;
+}
+
+#slideshowArea {
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+}
+
+#contactDetailsArea {
+    background-color: transparent;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+#linkMenu {
+    position: fixed;
+    top: 80px;
+    right: -24%;
+    max-width: 24%;
+    height: 100%;
+    z-index: 9;
+    
+    background-color: rgba(10,10,10,0.5);
+    transition: right 350ms ease-in;
+    
+}
+/*------------------------------------------------ CSS Styles for Zone Areas End -----------------------------------*/
+
+
+/*------------------------------------------------ CSS Styles for Link Menu Start ----------------------------------*/
+#linkMenu > ul {
+    list-style: none;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#linkMenu > ul > li {
+    width: 150px;
+    height: 40px;
+    margin: 10px 30px;
+    margin-left: -1px;
+    
+    background-color: #3c2d53;
+    border: solid 2px #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+#linkMenu > ul > li > p {
+    position: relative;
+    vertical-align: middle;
+    
+    color: white;
+    top: -8px;
+    font-size: 18px;
+    user-select: none;          /* Stops the user highlighting this text */
+    pointer-events: none;       /* Disable any clicking event on this elment */
+}
+/*------------------------------------------------ CSS Styles for Link Menu End ------------------------------------*/
+
+
+
+/*-------------------------------------------- CSS Styles for Dropdown Button Start --------------------------------*/
+.dropdownButton {
+    position: fixed;
+    right: 0;
+    top: 0;   
+    z-index: 10;
+}
+
+#dropdownButton {
+    border-bottom-left-radius: 10px;
+}
+/*-------------------------------------------- CSS Styles for Dropdown Button End ---------------------------------*/
+
+
+/*------------------------------------------- CSS Styles for Cover Properties Start -------------------------------*/
+
+#coverArea > h3 {
+    position: relative;
+    top: 400px;
+    margin-bottom: -22px;
+    z-index: 3;
+}
+
+.cover-pic { 
+    position: relative;   
+    top: 150px;
+    width: 500px;
+    z-index: 2;
+}
+
+.cover-background {
+    position: relative;
+    margin: 0 auto;
+    display: relative;
+    top: -500px;
+    margin-bottom: -500px;
+    width: 100%;
+    opacity: 0.7;
+}
+/*------------------------------------------- CSS Styles for Cover Properties End --------------------------------*/
+
+
+/*----------------------------------------- CSS Styles for Card Flipper Animation -------------------------------*/
+.contactDetailsHolder {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;   
+}
+
+#contactDetailsArea .contactDetailsHolder:hover {
+    transform: rotateY(180deg);
+}
+
+.contactDetailsFront, .contactDetailsBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.contactDetailsFront {
+    user-select: none;
+}
+
+.contactDetailsBack {
+    user-select: none;
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*---------------------------------------- CSS Styles for Card Flipper Animation End ----------------------------*/
+
+
+
+/*------------------------------------------------- CSS Styles for Animation -------------------------------------*/
+
+.skillInstruction {
+    width: 600px;
+    
+}
+
+.toggle-content {
+	display: none;                     /* Hides all toggle content classes (p tags) under the items */
+    height: 0;
+	overflow: hidden;                  /* Hides text as the transition moves. If taken off text remains visible until the end */
+	transition: height 350ms ease-in;  /* This is the speed and ease of the animation */
+}
+
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+}
+
+.Item {
+    width: 500px;
+    display:table-cell;
+}
+
+.Item > h3 {
+    position: relative;    
+    color: #333;
+    user-select: none;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.imgHolder {
+    position: relative;
+    top: -48px;
+    margin-bottom: -24px;
+    cursor: pointer;
+}
+
+.itemCanvas {
+    position: relative;
+    top: -48px;
+    left: -5px;
+    margin-bottom: -40px;    
+    z-index: -1;    
+}
+
+.Item > p {
+    position: relative;
+    top: -27px;
+    left: -12px;
+    margin-left: 14px;
+    margin-bottom: -14px;
+    padding: 10px;
+    width: 438px;
+    
+    background-color: rgba(255, 255, 255, 1);
+    color: #3c2d53;
+    border: 1px solid #3c2d53;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    user-select: none;
+    text-align: left;
+}
+/*------------------------------------------------ CSS Styles for Animation End -----------------------------------*/
+
+
+
+/*----------------- Link Group Classes Start ------------------*/
+.cvCase {
+	display: table;
+    width: 100px;
+	height: 80px;
+	margin: 0px auto;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+.cv {
+    display: table-cell;
+	width: 240px;	
+}
+
+.cv > a {
+	text-decoration: none;
+	color: #333;
+    height: 80px;
+}
+
+.cv > a > h2 {
+    pointer-events: none;
+    height: 60px;
+    width: 240px;
+    background-color: rgba(255,255,255,1.00);
+    border: 2px solid #333;
+    border-radius: 10px;
+	text-align: center;
+    line-height: 60px;
+}
+
+.experience {
+	margin: 0px 20px;
+}
+/*----------------- Link Group Classes End ------------------*/
+
+
+
+/*------------------------------------------------ CSS Styles for slideshow -----------------------------------*/
+.imageHolder {
+    width: 1280;
+    height: 935;
+}
+
+
+.imageBack, .imageForward { /* Applys to both the forward and backward image buttons */
+    padding: 10px;
+    padding-top: 15px;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    
+    background-color: rgba(150, 150, 150, 0.5);
+    color: #3c2d53;
+    border: 1px solid #3c2d53;
+    
+    text-align: center;
+    text-align: justify;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.imageBack:hover, .imageForward:hover {
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(150, 150, 150, 1);
+    
+}
+
+.imageBack {
+    display:block;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imageForward {
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+/*------------------------------------------------ CSS Styles for slideshow End -----------------------------------*/
+
+
+.footer {
+    padding: 10px;
+    height: 500px;
+    
+}

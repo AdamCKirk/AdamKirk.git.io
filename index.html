@@ -1,192 +1,451 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
-<head>
-	  
-    <title>Adam Portfolio</title>
-	<link href="./style.css" type="text/css" rel="stylesheet" >
-	  
-</head>
-
-<body>
-	
-	<!---------- This section contains a title and navigation ------------>
-	<header id="top" class="title">
-		
-		<br>
-		
-		<h1>Adam Charles Miller-Kirk</h1>
-		<h2>Senior Multimedia Design Engineer</h2>
-		<h2>Lockheed Martin</h2>
-		
-		<br>
-		
-	</header>
-	
-	<div class="navButton"></div>
-	
-	<div class="navCase">
-		
-		<nav>
-			<ul class="banner">
-				<a href="#top"><li>Home</li></a>
-				<a href="#Intro"><li>Intro</li></a>
-				<a href="#Coding-Skills"><li>Coding Skills</li></a>
-				<a href="#Design-Skills"><li>Design Skills</li></a>
-				<a href="#Experience"><li>Experience</li></a>
-				<a href="#Examples"><li>Exampls</li></a>
-				<a href="#infoDetails"><li>Contact Details</li></a>			
-			</ul>		
-		</nav>
-	
-	</div>
-	
-	
-	<!---------- This section contains an image of myself. ------------>	
-	<div class="profile-Area">
-                
-        <img class="profile-pic" src="Images/Profile-Picture.png" alt="My profile picture"/>
-        <img class="profile-background" src="Images/Background-Desktop.png" alt="My profile picture"/>  
-        	
-	</div>
-	<br>
-	
-	<div id="Intro">
-		<center>
-			<h2>Introduction</h2>
-			<p>I am an experienced developer with skills both in design</p>
-			<p>and coding. I currently work with Lockheed Martin</p>
-			<p>as a Senior Multimedia Design Engineer</p>
-		</center>
-	</div>
-	
-	<br>
-	<!---------- This section of my skills. ------------>
-	<div class="skills-Area">
-		<br>
-		
-<!-- ------------------------------------------------- Here is the Animated HTML Section --------------------------------- -->
-	
-	<div class="items">
-    	
-		<center>
-			
-			<h3>Section 1</h3>
-			<br>
-            
-			<div>
-				<div class="skillItem">
-					<img class ="toggle" href="Item1" src="./Images/Object-Base_2.png" alt="a item image">
-					<p class="toggle-content" id="Item1">
-						Item 1 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
-					</p>
-				</div>
-
-				<div class="skillItem">
-					<img class ="toggle" href="Item2" src="./Images/Object-Base_2.png" alt="a item image">
-					<p class="toggle-content" id="Item2">
-						Item 2 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey. Althought these properties can be at risk if they are placed in the sun for too long, yes that is right, they have the fair skin of a ginger.    
-					</p>
-				</div>
-			</div>
-
-			<div>
-				<div class="skillItem">
-					<img class ="toggle" href="Item3" src="./Images/Object-Base_2.png" alt="a item image">
-					<p class="toggle-content" id="Item3">
-						Item 3 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
-					</p>
-				</div>
-
-				<div class="skillItem">
-					<img class ="toggle" href="Item4" src="./Images/Object-Base_2.png" alt="a item image">
-					<p class="toggle-content" id="Item4">
-						Item 4 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
-					</p>
-				</div>
-			</div> 
-		</center>
+    <head>
+        <title>Adam's Skill Profile</title>
+        <link rel="stylesheet" type="text/css" href="design.css">
+    </head>
+    
+    <body>
         
-	</div>
-<!-- ------------------------------------------------- Here is the Animated HTML Section End --------------------------------- -->
-		
-		<div class="section">
-			<h2 id="Coding-Skills">Coding Skills</h2>
-			<div class="skillRow">
-				<div class="skillColumn">
-					<h3>HTML5</h3><br>
-					<p id="item1">
-						I use HTML to input information into websites. It is the base for all
-						websites that I create. I mainly use this type of skill for work alongside
-						the Kanexa tool.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>CSS</h3><br>
-					<p>
-						I use CSS to style the contents of webpages. Without the use of a CSS file any HTML page would appear black and white but mainly very dull.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>JavaScript</h3><br>
-					<p>
-						I use vanilla JavaScript to help program interactions and movements within websites. JavaScript is a massive language and there are many libraries which provides even more variaties. This means knowing the basic version was very important before any other.
-					</p>
-				</div>
-			</div>
+        <div class="dropdownButton">
+            <canvas id="dropdownButton" width="80px" height="80px"></canvas>
+        </div>
+        
+        
+        <div id="titleArea">
+            <h1>Welcome to my site</h1>
+        </div>
+        
+        <div id="titleDividerArea">
+            <canvas id="topLine" width="1890" height="20">Here</canvas>        
+        </div>
+        
+        <div id="linkMenu">
+            <ul>
+                <li class="button" href="titleArea"><p>Title</p></li>
+                <li class="button" href="coverArea"><p>Introduction</p></li>
+                <li class="button" href="videoArea"><p>Video</p></li>
+                <li class="button" href="skillsArea"><p>Skills</p></li>
+                <li class="button" href="slideshowArea"><p>Slideshow</p></li>
+                <li class="button" href="contactDetailsArea"><p>Details</p></li>
+            </ul>
+        </div>
+        
+        
+        <div id="coverArea">
+            <img class="cover-pic" src="Resources/Profile-Picture.png" alt="My profile picture"/>
+            <img class="cover-background" src="Resources/Background-Desktop.png" alt="My profile picture"/>
+            <br>
+        
+            <div id="Intro">
+                <h2>Introduction</h2>
+                <p>I am an experienced developer with skills both in design and coding.</p>
+                <p>I currently work with Lockheed Martin as a Senior Multimedia Design Engineer.</p>
+                <p>Please see my card below.</p>
+	       </div>
+        </div>
+        <br>
+        
+        <div id="contactDetailsArea">
+            <div class="contactDetailsHolder">
+                <div class="contactDetailsFront">
+                    <img src="Resources/Business-Card.png">
+                </div>
 
-			<div class="skillRow">
-				<div class="skillColumn">
-					<h3>C#</h3><br>
-					<p>
-						I learned C# as it is the primary lanuage for Unity. So far I have only ever used it within that software.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>Bootstrap</h3><br>
-					<p>
-						Bootstrap is a very useful tool to help build and develop websites with limited knowledge. The templates make it easy to style and animate without the knowledge of other software. This language is very well documented which makes it easy to use.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>CreateJS</h3><br>
-					<p>
-						CreateJS is the language that I use within Adobe Animate. This is a library for the JavaScript language built to work within the software. I use this as the main tool to create control and interaction. 
-					</p>
-				</div>
-			</div>
-		</div>
-		<br>
-	<!---------- This section contains an group of design skills. ------------>		
-		<div class="section">
-			<h2 id="Design-Skills">Development Skills</h2>
-			<div class="skillRow">
-				<div class="skillColumn">
-					<h3>Adobe Suite</h3><br>
-					<p>
-						I have a broad knowledge of many of the Adobe Suite packages. I mainly focus on Photoshop, Illustrator, Animate, After Effects and Dreamweaver. I mainly use this software to alter images, design illustration, alter videos, create interactive media and write code.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>3D Studio Max</h3><br>
-					<p>
-						This is a 3D software which allows the creation of 3D assets. I also use it to create rigs that allow movement of the 3D models.
-					</p>
-				</div>
-				<div class="skillColumn">
-					<h3>Unity</h3><br>
-					<p>
-						Unity is a software that allows the importation of models and code to create interactive assets. It is a very dynamic and useful tool that has many applications but is primarily used for games development.
-					</p>
-				</div>
-			</div>
-		</div>
-		<br>
-	</div>
-	<br>
-	
-	<!---------- This section contains the experience information ------------>	
+                <div class="contactDetailsBack">
+                    <h3>Adam Charles Kirk</h3>
+                    <h3>Senior Multimedia Design Engineer</h3>
+                    <br>
+                    <p><strong>Phone:</strong> 07824516939</p>
+                    <p><strong>Email:</strong> adam_kirk_msc@hotmail.com</p>
+                </div> 
+            </div>
+        </div>
+
+            
+       <!-- ------------------------------------------------- Here is the Animated HTML Section Start --------------------------------- -->
+            
+        <div id="skillsArea">
+            <center>
+                <h3 class="skillInstruction">Below are my skills and the level that I am able to use them at. Click the skill to see what I use it for and click again to shrink it back.</h3>
+
+                <h3>Coding Skills</h3>
+                
+                <div>
+                    <div class="Item">
+                        <h3>HTML</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item1" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar1" value="95" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item1">
+                            I use HTML to input information into websites. It is the base for all
+                            websites that I create. I mainly use this type of skill for work alongside
+                            the Kanexa tool.
+                        </p>
+                    </div>
+
+                    <div class="Item">
+                        <h3>CSS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item2" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar2" value="75" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item2">
+                            I use CSS to style the contents of webpages. Without the use of a CSS file any HTML page would appear black and white but mainly very dull.
+					   </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="Item">
+                        <h3>Bootstrap</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item5" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar5" value="60" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item5">
+                            Bootstrap is a very useful tool to help build and develop websites with limited knowledge. The templates make it easy to style and animate without the knowledge of other software. This language is very well documented which makes it easy to use.
+					   </p>
+                    </div>
+                    
+                    <div class="Item">
+                        <h3>SASS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item8" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar8" value="32" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item8">
+                            Item 5 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="Item">
+                        <h3>JavaScript</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item3" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar3" value="85" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item3">
+                            I use vanilla JavaScript to help program interactions and movements within websites. JavaScript is a massive language and there are many libraries which provides even more variaties. This means knowing the basic version was very important before any other.
+					   </p>
+                    </div>
+                    
+                    <div class="Item">
+                        <h3>CreateJS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item6" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar6" value="90" width="460px" height="14px"></canvas>
+                        </div>
+                        <p class="toggle-content" id="Item6">
+                            CreateJS is the language that I use within Adobe Animate. This is a library for the JavaScript language built to work within the software. I use this as the main tool to create control and interaction. 
+					   </p>
+                    </div>
+
+                    
+                </div>
+
+                <div>
+                    <div class="Item">
+                        <h3>ReactJS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item9" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar9" value="35" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item9">
+                            Item 7 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                    
+                    <div class="Item">
+                        <h3>AngularJS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item12" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar12" value="35" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item12">
+                            Item 8 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="Item">
+                        <h3>PhaserJS</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item11" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar11" value="15" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item11">
+                            Item 9 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>                    
+                
+                    
+                    <div class="Item">
+                        <h3>Python</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item4" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar4" value="18" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item4">
+                            Item 12 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>                    
+                    
+                    
+                    <div class="Item">
+                        <h3>C#</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item7" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar7" value="18" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item7">
+						  I learned C# as it is the primary lanuage for Unity. So far I have only ever used it within that software.
+				        </p>
+                    </div>
+                    
+                    <div class="Item">
+                        <h3>C++</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item10" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar10" value="18" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item10">
+                            Item 10 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+                <br>
+                
+                
+                <h3>Design Skills</h3>                
+                <div>
+                    <div class="Item">
+                        <h3>Adobe Photoshop</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item13" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar13" value="82" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item13">
+                            Item 1 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+
+                    <div class="Item">
+                        <h3>Adobe Illustrator</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item14" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar14" value="87" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item14">
+                            Item 2 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey. Althought these properties can be at risk if they are placed in the sun for too long, yes that is right, they have the fair skin of a ginger.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="Item">
+                        <h3>Adobe Animate</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item15" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar15" value="85" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item15">
+                            Item 3 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                
+                    <div class="Item">
+                        <h3>Adobe After Effects</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item16" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar16" value="62" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item16">
+                            Item 12 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>                    
+                    <div class="Item">
+                        <h3>Adobe Premier</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item17" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar17" value="49" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item17">
+                            Item 4 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+
+                    <div class="Item">
+                        <h3>Adobe Dreamweaver</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item18" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar18" value="48" width="460px" height="14px"></canvas>
+                        </div>
+                        <p class="toggle-content" id="Item18">
+                            Item 6 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div class="Item">
+                        <h3>3D Studio Max</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item19" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar19" value="72" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item19">
+                            This is a 3D software which allows the creation of 3D assets. I also use it to create rigs that allow movement of the 3D models.
+				        </p>
+                    </div>
+                    
+                    <div class="Item">
+                        <h3>Unity</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item20" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar20" value="32" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item20">
+                            Unity is a software that allows the importation of models and code to create interactive assets. It is a very dynamic and useful tool that has many applications but is primarily used for games development.
+                        </p>
+                    </div>
+                </div>
+
+                <div>                    
+                    <div class="Item">
+                        <h3>P3D</h3>
+                        
+                        <div class="imgHolder">
+                            <img class ="toggle" href="Item21" src="Resources/Object-Base.png" alt="a item image">
+                        </div>
+                        
+                        <div class="itemCanvas">
+                            <canvas id="skillBar21" value="45" width="460px" height="14px"></canvas>
+                        </div>
+                        
+                        <p class="toggle-content" id="Item21">
+                            Item 7 has these properties. They have many uses which include the fighting passion of a flamingo and the careful balance of a one eyed monkey.                
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <br>
+                
+<!-- ------------------------------------------------- Here is the Animated HTML Section End --------------------------------- -->
+
+
+        
+<!-- ------------------------------------------------------- Experience Text Start --------------------------- -->	
 	<div id="Experience" >
 		<center>
 			<h2>Experience</h2><br>
@@ -209,93 +468,67 @@
 		<br><br>
 		<div class="cvCase">
 			<div class="cv">
-				<a href="Images/Adam Charles Kirk's CV 2019 March.pdf" target="_blank"><h2>Click for CV</h2></a>
+				<a href="Resources/Adam Charles Kirk's CV 2019 June.pdf" target="_blank"><h2>Click for CV</h2></a>
 			</div>
 			<div class="cv">
 				<a href="http://hardingdale.com/" target="_blank"><h2>Click for Website</h2></a>
 			</div>
 		</div>
 	</div>
-	
 	<br>
-	
-	
-	<!---------- This section contains a slideshow of the example work ------------>
-	<div id="Examples">
+<!-- -------------------------------------------------------- Experince Text End ---------------------------- -->	
+        
+        
 
-		<div class="slideshow-container">
+<!-- -------------------------------------------------- Here is the Slideshow Section Start ---------------------------------- -->
+        <div id="slideshowArea">    
 
-			<div class="mySlides fade">
-				<img src="Images/Example CreateJS.png" style="width:100%" alt="A picture of dinner">
-			</div>
+            <p class="imageBack">&#10094;</p>
+            <p class="imageForward">&#10095;</p>                
 
-			<div class="mySlides fade">
-				<img src="Images/Example Design.png" style="width:100%" alt="A picture of dinner">
-			</div>
+            <div id="imageHolder" class="imageHolder">
+                <div class=image1>
+                    <img src="Resources/Example 3D.png">
+                </div>
 
-			<div class="mySlides fade">
-				<img src="Images/Example Website.png" style="width:100%" alt="A picture of dinner">
-			</div>
+                <div class=image2>
+                    <img src="Resources/Example CreateJS.png">
+                </div>
 
-			<div class="mySlides fade">
-				<img src="Images/Example 3D.png" style="width:100%" alt="A picture of dinner">
-			</div>		
-			
-			
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
+                <div class=image3>
+                    <img src="Resources/Example Design.png">
+                </div>
 
-		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-		 	<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-		</div>
-
-	</div>
-	
-	<br><br>
-	
-	
-	<!---------- This section contains the contact details. ------------>
-    
-    <div class="flip-card">
-      <div class="flip-card-inner">
-          
-        <div class="flip-card-front">
-            <!-- <img src="img_avatar.png" alt="Contact Details" style="width:300px;height:300px;"> -->
-            <p>Here</p>
+                <div class=image4>
+                    <img src="Resources/Example Website.png">
+                </div>        
+            </div>
         </div>
-          
-        <div class="flip-card-back">
-            <h2>Adam Charles Miller-Kirk</h2> 
-            <h3>Senior Multimedia Design Engineer</h3>
+        <br>           
+<!-- -------------------------------------------------- Here is the Slideshow Section End ------------------------------------ -->
+        
+        
+<!-- ------------------------------------------------- Here is the Video HTML Section Start --------------------------------- -->
+        <div id="videoArea">
+            <h3>Below a video that create while at university!</h3>
             <br>
-            <p><strong>Phone: </strong>07824516939</p>
-            <p><strong>Email: </strong>adam_kirk_msc@hotmail.com</p>
+            <video width="1280" height="720" controls>
+                <source src="Resources/video-Tester.mp4" type="video/mp4">
+                Your broweser is the worst.
+            </video>
         </div>
-          
-      </div>
-    </div>
-	
-	
-	<!--       jQuery links and the link to the js file        -->
-  	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  		crossorigin="anonymous">
-	</script>
-  
-	<script src="./main.js"></script>
-	
-</body>
-	
-
-
-<footer>
-	
-		
-</footer>
-	
+        <br>
+<!-- ------------------------------------------------- Here is the Video HTML Section End ----------------------------------- -->
+        
+        
+        <script src="action.js"></script>
+        
+    </body>
+    
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
+    
 </html>
