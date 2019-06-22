@@ -345,6 +345,10 @@ body {
     .body {
         width: 1000px;
     }
+    
+    .cover-background {
+        max-width: 1000px;
+    }
 
 }
 
