@@ -31,7 +31,7 @@ const topLine = lineCanvas.getContext("2d");            // Use lineCanvas and se
 
 topLine.beginPath();                    // Start shape
 topLine.moveTo(10,10);                  // Move line position to start position (left side of screen -10px)
-topLine.lineTo((screenWidth-10),10);    // Move line to width of screen minus 10 px
+topLine.lineTo(990,10);    // Move line to width of screen minus 10 px
 topLine.closePath;                      // End shape
 
 topLine.strokeStyle = "#3c2d53";        // Colour stroke
