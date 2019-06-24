@@ -29,15 +29,13 @@ body {
 
 #skillsArea {
     position: relative;
-    /*
-    background-color: grey;
+    text-align: center;
+
+    width: 1280px;
     border: solid 5px #333;
     border-radius: 10px;
-    */
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
     z-index: 1;
-    width: 1280px;
 }
 
 #slideshowArea {
@@ -145,7 +143,7 @@ body {
     transform-style: preserve-3d;   
 }
 
-#contactDetailsArea .contactDetailsHolder:hover {
+#contactDetailsArea:hover .contactDetailsHolder {
     transform: rotateY(180deg);
 }
 
@@ -189,10 +187,17 @@ body {
 	height: auto;
 }
 
+.skillHolder {
+    display:grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-row-gap: 5px;
+    justify-content: space-around;
+}
+
 .Item {
     width: 500px;
-    display:table-cell;
 }
+
 
 .Item > h3 {
     position: relative;    
@@ -272,7 +277,7 @@ body {
 }
 
 .experience {
-	margin: 0px 20px;
+	margin: 0px 100px;
 }
 /*----------------- Link Group Classes End ------------------*/
 
@@ -353,6 +358,14 @@ body {
     #skillsArea {
         max-width: 1000px;
     }
+    
+    .skillHolder {
+        display:grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-row-gap: 5px;
+        justify-content: space-around;
+    }
+
 
 }
 
