@@ -4,6 +4,7 @@ var console = console.log;
 
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Dropdown Button Drawing Start >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 const dropdownButton = document.getElementById('dropdownButton');
 const dropdownDrawing = dropdownButton.getContext("2d");
 
@@ -20,11 +21,13 @@ dropdownDrawing.fillRect(10, 35, 60, 8);
 
 dropdownDrawing.fillStyle = '#333';
 dropdownDrawing.fillRect(10, 55, 60, 8);
+
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Dropdown Button Drawing End >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<< Single Line Across Screen Start >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/*
 const screenWidth = document.body.clientWidth;          // Retrive the size of the screen and set it to screenWidth
 const lineCanvas = document.getElementById("topLine");  // Get ID topline and set it to lineCanvas
 const topLine = lineCanvas.getContext("2d");            // Use lineCanvas and set it to 2d graphics and set that to topLine
@@ -37,6 +40,7 @@ topLine.closePath;                      // End shape
 topLine.strokeStyle = "#3c2d53";        // Colour stroke
 topLine.lineWidth = 2;                  // Set width of stroke
 topLine.stroke();                       // Draw stroke
+*/
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<< Single Line Across Screen End >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -193,12 +197,13 @@ for (i = 0; i < buttons.length; i++){                       // Loop the length o
 
 function searchThenGo(event) {
     let location = event.target.attributes.href.value;      // Store the clicked items href value as location
-    
+    /*
     if (location == 'titleArea'){
         console('here');
         menuMode();
         return;
     }
+    */
     document.querySelector('#'+location).scrollIntoView();  // Go to the ID item that is listed in the href value
     menuMode();
 }

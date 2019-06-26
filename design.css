@@ -9,10 +9,9 @@ body {
 
 /*------------------------------------------------ CSS Styles for Zone Areas Start -----------------------------------*/
 #titleArea {
-    display: inline;
     text-align: center;
     background-color: #3c2d53;
-    height: 100px;
+    height: 120px;
 }
 
 #titleDividerArea {
@@ -32,8 +31,6 @@ body {
     text-align: center;
 
     width: 1280px;
-    border: solid 5px #333;
-    border-radius: 10px;
     margin: 0 auto;
     z-index: 1;
 }
@@ -121,7 +118,6 @@ body {
     position: relative;
     width: 500px;
     margin: 0px auto;
-    margin-bottom: -500px;
     z-index: 2;
 }
 
