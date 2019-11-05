@@ -44,8 +44,8 @@ body {
 #contactDetailsArea {
     background-color: transparent;
     text-align: center;
-    width: 800px;
-    height: 285px;
+    width: 600px;
+    height: 165px;
     margin: 0 auto;
     perspective: 1000px;
 }
