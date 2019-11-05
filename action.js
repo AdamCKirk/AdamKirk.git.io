@@ -47,7 +47,7 @@ topLine.stroke();                       // Draw stroke
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<< Item Canvas Creation Start >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-let numOfItems = 19;
+let numOfItems = 23;
  
 canvasHolder = []   // Will hold all item canvases
 
