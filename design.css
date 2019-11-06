@@ -3,7 +3,6 @@ body {
     background-color: #455f6d;
     color:white;
     margin: 0;
-    padding;
     user-select: none;
 }
 
@@ -14,9 +13,11 @@ body {
     height: 120px;
 }
 
+/*
 #titleDividerArea {
 
 }
+*/
 
 #coverArea {
     text-align: center;
