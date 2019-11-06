@@ -61,7 +61,6 @@ body {
     
     background-color: rgba(10,10,10,0.5);
     transition: right 350ms ease-in;
-    
 }
 /*------------------------------------------------ CSS Styles for Zone Areas End -----------------------------------*/
 
@@ -281,8 +280,8 @@ body {
 
 /*------------------------------------------------ CSS Styles for slideshow -----------------------------------*/
 .imageHolder {
-    width: 1280;
-    height: 935;
+    width: 1000;
+    height: 700;
 }
 
 
@@ -292,7 +291,7 @@ body {
     width: 30px;
     height: 40px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     
     background-color: rgba(150, 150, 150, 0.5);
     color: #3c2d53;
