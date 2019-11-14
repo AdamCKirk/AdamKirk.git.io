@@ -10,20 +10,11 @@ body {
 #titleArea {
     text-align: center;
     background-color: #3c2d53;
-    height: 120px;
+    height: 80px;
+    top: -10px;
 }
-
-/*
-#titleDividerArea {
-
-}
-*/
 
 #coverArea {
-    text-align: center;
-}
-
-#videoArea {
     text-align: center;
 }
 
@@ -87,7 +78,6 @@ body {
 #linkMenu > ul > li > p {
     position: relative;
     vertical-align: middle;
-    
     color: white;
     top: -8px;
     font-size: 18px;
