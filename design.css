@@ -265,7 +265,7 @@ body {
 }
 
 
-p {
+.textFormat {
 	margin: 0px 100px;
 }
 /*----------------- Link Group Classes End ------------------*/
