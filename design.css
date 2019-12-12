@@ -128,10 +128,11 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;   
+    /* transition: transform 0.8s;
+    transform-style: preserve-3d;    */
 }
 
+/*
 #contactDetailsArea:hover .contactDetailsHolder {
     transform: rotateY(180deg);
 }
@@ -141,17 +142,24 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-}
+} 
 
 .contactDetailsFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     user-select: none;
 }
-
+*/
 .contactDetailsBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     user-select: none;
     background-color: #000;
     color: white;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 /*---------------------------------------- CSS Styles for Card Flipper Animation End ----------------------------*/
 
